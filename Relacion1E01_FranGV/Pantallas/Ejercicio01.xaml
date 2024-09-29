@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Relacion1E01_FranGV.Ejercicio01"
+             Title="Relación 1: Ejercicio 1">
+    <VerticalStackLayout>
+        
+        <Label 
+            Text="Introduzca su nombre"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+        <Entry
+            x:Name="entryNombre"
+            MaxLength="20"
+            Text="" />
+
+        <Label
+            Text="Introduzca sus apellidos"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+        <Entry
+            x:Name="entryApellidos"
+            Text=""
+            MaxLength="40"
+            />
+        <Label
+            Text="Introduzca su edad"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+        <Entry
+            x:Name="entryEdad"
+            Text=""
+            MaxLength="2"
+            />
+        <Button
+            x:Name="buttonAcceder"
+            Text="Acceder" 
+            Clicked="ClickAcceder"            
+            />
+        <Label
+            x:Name="LabelInfoUser"
+            Text=""
+            />
+
+
+    </VerticalStackLayout>
+</ContentPage>
