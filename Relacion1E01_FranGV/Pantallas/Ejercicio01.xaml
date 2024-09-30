@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Relacion1E01_FranGV.Ejercicio01"
              Title="Relación 1: Ejercicio 1">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        HorizontalOptions="Center">
         
         <Label 
             Text="Introduzca su nombre"

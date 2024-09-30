@@ -1,7 +1,4 @@
-using Android.Content.Res;
-using Microsoft.Maui.Controls.Compatibility.Platform.UWP;
 using Relacion1E01_FranGV.Clases;
-using static Android.Provider.Settings;
 
 namespace Relacion1E01_FranGV;
 
@@ -47,7 +44,7 @@ public partial class Ejercicio01 : ContentPage
 
 
     }
-
+    
     private void FuncionAcceder()
     {
         // Instanciar Clase Persona

@@ -14,6 +14,7 @@ namespace Relacion1E01_FranGV
             int numero = 0;
 
             // Proceso
+            if (string.IsNullOrEmpty(cadena)) throw new CadenaVaciaException();
             numero = Convert.ToInt32(cadena);
 
             // Salida

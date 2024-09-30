@@ -73,7 +73,15 @@ namespace Relacion1E01_FranGV.Clases
         }
 
         // MÉTODOS
-
+        /// <summary>
+        /// Validación de las cadenas
+        /// </summary>
+        /// <param name="cadena">Cadena a validar</param>
+        /// <param name="max">Máximo de la cadena</param>
+        /// <param name="min">Mínimo de la cadena</param>
+        /// <returns>Cadena formateada</returns>
+        /// <exception cref="CadenaVaciaException">En el caso de que haya cadena vacía</exception>
+        /// <exception cref="Exception">Excepciones generales</exception>
         public static string ValidarCadena(string cadena, int max, int min)
         {
             cadena = cadena.Trim();
@@ -88,6 +96,11 @@ namespace Relacion1E01_FranGV.Clases
             return cadena;
         }
 
+        /// <summary>
+        /// Validacion de la edad
+        /// </summary>
+        /// <param name="num">Edad a validar</param>
+        /// <exception cref="Exception"></exception>
         public  void ValidarEdad(int num)
         {
             if (num > MAX_AGE) throw new Exception("Número superior al máximo permitido");
