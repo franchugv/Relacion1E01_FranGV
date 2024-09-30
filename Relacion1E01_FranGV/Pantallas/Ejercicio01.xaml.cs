@@ -19,6 +19,8 @@ public partial class Ejercicio01 : ContentPage
 
         // Reset Label
         LabelInfoUser.Text = "";
+        LabelInfoUser.TextColor = Colors.White;
+
 
         // Proceso
         try
@@ -51,13 +53,14 @@ public partial class Ejercicio01 : ContentPage
         Persona NuevaPersona = new Persona(entryNombre.Text, entryApellidos.Text, Metodos.ConvertirInt(entryEdad.Text));
 
 
-        if (NuevaPersona.Edad > 18)
+        if (NuevaPersona.Edad >= 18)
         {
             string textoMayorEdad = $"{NuevaPersona.Apellidos}, {NuevaPersona.Nombre}:\n" +
             $"Tiene acceso al sistema";
             
             MostrarMensaje(textoMayorEdad);
             LabelInfoUser.Text = textoMayorEdad;
+            LabelInfoUser.TextColor = Colors.Green;
         }
         else
         {
@@ -66,6 +69,7 @@ public partial class Ejercicio01 : ContentPage
            
             MostrarMensaje(textoMenorEdad);
             LabelInfoUser.Text = textoMenorEdad;
+            LabelInfoUser.TextColor = Colors.Red;
 
         }
     }

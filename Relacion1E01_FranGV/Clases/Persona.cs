@@ -55,7 +55,7 @@ namespace Relacion1E01_FranGV.Clases
             }
             set
             {
-                value = ValidarCadena(value, MAX_SURNAMES, MIN_SURNAMES);
+                _apellidos = ValidarCadena(value, MAX_SURNAMES, MIN_SURNAMES);
             }
         }
 
